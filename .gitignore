@@ -53,3 +53,10 @@ timetable.csv
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Build directories
+bin/
+obj/
+
+# Project files
+*.csproj.user
