@@ -23,8 +23,10 @@ bld/
 *.userprefs
 
 # Visual Studio Code files
+.vscode
 .vscode/
 *.code-workspace
+
 
 # ReSharper
 _ReSharper*/
