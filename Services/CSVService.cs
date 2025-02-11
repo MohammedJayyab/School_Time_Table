@@ -12,9 +12,10 @@ namespace School_Time_Table.Services
 
         public CSVService()
         {
-            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
-            dataPath = Path.Combine(baseDir, "data");
-            Directory.CreateDirectory(dataPath); // Creates if doesn't exist
+            string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory)!
+                                .Parent!.Parent!.Parent!.FullName;
+            dataPath = Path.Combine(projectDir, "data");
+            Directory.CreateDirectory(dataPath);
         }
 
         public List<Teacher> LoadTeachers()

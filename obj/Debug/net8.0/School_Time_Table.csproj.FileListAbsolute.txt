@@ -26,3 +26,4 @@ C:\Users\mjayy\source\repos\School_Time_Table\School_Time_Table\obj\Debug\net8.0
 C:\Users\mjayy\source\repos\School_Time_Table\School_Time_Table\obj\Debug\net8.0\School_Time_Table.pdb
 C:\Users\mjayy\source\repos\School_Time_Table\School_Time_Table\obj\Debug\net8.0\School_Time_Table.genruntimeconfig.cache
 C:\Users\mjayy\source\repos\School_Time_Table\School_Time_Table\obj\Debug\net8.0\ref\School_Time_Table.dll
+C:\Users\mjayy\source\repos\School_Time_Table\School_Time_Table\obj\Debug\net8.0\School_Time_Table.sourcelink.json

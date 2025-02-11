@@ -11,10 +11,9 @@ namespace School_Time_Table.Services
 
         public SubjectService()
         {
-            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
-            string dataDir = Path.Combine(baseDir, "data");
-            Directory.CreateDirectory(dataDir); // Creates if doesn't exist
-            filePath = Path.Combine(dataDir, "subjects.csv");
+            string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory)!
+                                .Parent!.Parent!.Parent!.FullName;
+            filePath = Path.Combine(projectDir, "data", "subjects.csv");
         }
 
         public List<SubjectRule> LoadSubjects()

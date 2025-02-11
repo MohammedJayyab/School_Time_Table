@@ -17,7 +17,9 @@ namespace School_Time_Table.Services
             _scheduleGenerator = scheduleGenerator;
             _subjectService = subjectService;
             
-            string daysPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data", "days.txt");
+            string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory)!
+                                .Parent!.Parent!.Parent!.FullName;
+            string daysPath = Path.Combine(projectDir, "data", "days.txt");
             _days = File.ReadAllLines(daysPath);
         }
 
@@ -50,7 +52,8 @@ namespace School_Time_Table.Services
 
             foreach (var teacher in teachers)
             {
-                Console.WriteLine($"\n👨‍🏫 Teacher: {teacher.TeacherName} (ID: {teacher.TeacherID})");
+                var teacherSubjects = string.Join(", ", teacher.Subjects);
+                Console.WriteLine($"\n👨‍🏫 Teacher: {teacher.TeacherName} (ID: {teacher.TeacherID}) [Subjects: {teacherSubjects}]");
                 Console.WriteLine("-------------------------------------------------");
                 Console.WriteLine("Day       | Subjects Taught");
                 Console.WriteLine("-------------------------------------------------");

@@ -20,7 +20,9 @@ namespace School_Time_Table.Services
             _constraintService = constraintService;
             _allSubjects = _subjectService.LoadSubjects();
             
-            string daysPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data", "days.txt");
+            string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory)!
+                                .Parent!.Parent!.Parent!.FullName;
+            string daysPath = Path.Combine(projectDir, "data", "days.txt");
             _days = File.ReadAllLines(daysPath);
         }
 

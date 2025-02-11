@@ -2,7 +2,7 @@ Subject,Priority,WeeklyHours_General,WeeklyHours_Science,WeeklyHours_Literal,Max
 Math,5,5,5,3,1,General|Science|Literal
 Arabic,5,4,4,4,1,General|Science|Literal
 English,4,3,3,3,1,General|Science|Literal
-Physics   ,4,3,3,0,1,General|Science
+Physics,4,3,3,0,1,General|Science
 Chemistry,4,3,3,0,1,General|Science
 Biology,4,3,3,0,1,General|Science
 Culture,2,2,2,2,1,General|Science|Literal
@@ -11,3 +11,4 @@ History,3,2,0,3,1,General|Literal
 Philosophy,3,2,0,3,1,General|Literal
 Economics,3,0,0,4,1,Literal
 Sport,1,2,2,2,1,General|Science|Literal
+Music,1,2,2,2,1,General|Science|Literal
